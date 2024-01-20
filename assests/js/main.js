@@ -1,3 +1,5 @@
+const cardshtml = document.getElementById("cards")
+
 const arrayCards = [
     {
         class: 'Rogue',
@@ -36,3 +38,22 @@ const arrayCards = [
         photo: 'barbarian.png'
     }
 ]
+
+for (let i = 0; i < arrayCards.length; i++) {
+    const card = arrayCards[i];
+
+    console.log(card)
+
+    cardshtml.innerHTML += `<div class="card">
+    <figure>
+        <img src="./assests/img/${card.photo}" alt="">
+    </figure>
+    <h3 class="gold-text">${card.class}</h3>
+    <div class="gold-text">
+        <span>HP ${card.hp}</span>
+        <span>/</span>
+        <span>AC ${card.ac}</span>
+    </div>
+</div>`
+
+}
