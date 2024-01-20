@@ -1,0 +1,67 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html {
+    color: white;
+}
+
+body {
+    background-image: url(../img/bg-01.jpg);
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+img {
+    width: 100%;
+    display: block;
+}
+
+main {
+    width: 70%;
+    margin: 100px auto;
+    text-align: center;
+}
+
+.flex {
+    display: flex;
+}
+
+h1 {
+    text-transform: uppercase;
+    font-size: 3rem;
+}
+
+.container {
+    flex-wrap: wrap;
+    justify-content: center;
+    margin-top: 50px;
+    gap: 30px;
+}
+
+.card {
+    width: calc((100% / 3) - 30px + (30px / 3));
+}
+
+h3 {
+    font-size: 2rem;
+    text-transform: uppercase;
+    margin-bottom: 10px;
+}
+
+.gold-text {
+    font-family: 'Times New Roman', Times, serif;
+    background-image: linear-gradient(to right,
+            #462523 0,
+            #cb9b51 22%,
+            #f6e27a 45%,
+            #f6f2c0 50%,
+            #f6e27a 55%,
+            #cb9b51 78%,
+            #462523 100%);
+    color: transparent;
+    -webkit-background-clip: text;
+}
